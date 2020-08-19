@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eurohouse Group - West Vancouver Builder, General Contractor, Kitchen Cabinets</title>
+        <meta name="description" content="Eurohouse Group is an award winning developer, builder, and interior millwork supplier of kitchen cabinets, bathroom vanities, interior doors, and walk-in closets from Italy. Projects by Eurohouse Group range from a complete development of a single-family home, to a home renovation or simply kitchen cabinets and other interior millwork supply.">
+        <meta name="theme-color" content="#c9e0e04d">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <style>
+            .preloader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: #1B1B1B;
+                z-index: 1000;
+                transition: opacity .4s ease;
+            }
+
+            .preloader--hidden {
+                opacity: 0;
+            }
+
+            .preloader__line {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 4px;
+                background: #000;
+                transition: opacity .4s ease;
+            }
+
+            @keyframes animateCenter {
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+
+            .preloader__center {
+                position: absolute;
+                height: 4px;
+                background: #fff;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, 0);
+            }
+
+            .preloader__center--animated {
+                animation: animateCenter 3s ease forwards infinite;
+            }
+        </style>
+        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="../styles/main.css">
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="preloader__line">
+                <div class="preloader__center preloader__center--animated"></div>
+            </div>
+        </div>
+        <header class="header header--black">
+    <nav class="header__nav">
+        <div class="header__left-side">
+            <div class="header__menuBtn menuBtn">
+                <div class="header__menuBtn_icon">
+                    <div class="header__menuBtn_line-1"></div>
+                    <div class="header__menuBtn_line-2"></div>
+                    <div class="header__menuBtn_line-3"></div>
+                    <div class="header__menuBtn_line-4"></div>
+                </div>
+                <span class="header__menuBtn_title">Menu</span>
+            </div>
+            <nav class="header__menu">
+                <div class="header__menuBtn menuBtn">
+                    <div class="header__menuBtn_icon">
+                        <div class="header__menuBtn_line-1"></div>
+                        <div class="header__menuBtn_line-2"></div>
+                        <div class="header__menuBtn_line-3"></div>
+                        <div class="header__menuBtn_line-4"></div>
+                    </div>
+                    <span class="header__menuBtn_title">Menu</span>
+                </div>
+                <div class="header__wrapper">
+                    <ul class="header__list">
+                        <li class="header__item"><a class="header__link" href="/">Home</a></li>
+                        <li class="header__item"><a class="header__link" href="/about">About Us</a></li>
+                        <li class="header__item"><a class="header__link" href="/projects">Projects</a></li>
+                        <li class="header__item"><a class="header__link" href="/contact">Contact Us</a></li>
+                        <li class="header__item requestBtn"><p class="header__link">Send Request</p></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="header__social">
+                <li class="header__facebook">
+                    <a href="https://www.facebook.com/eurohousegroup/" target="_blank">
+                        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path class="social-icon" d="M9.29031 0.930389L6.99031 0.930389C6.41409 0.897838 5.83759 0.989248 5.29971 1.19845C4.76182 1.40765 4.27505 1.72978 3.87225 2.1431C3.46945 2.55643 3.15997 3.05134 2.9647 3.59444C2.76944 4.13754 2.69292 4.7162 2.74031 5.29139L2.74031 7.30239L0.431312 7.30239C0.335569 7.30239 0.243747 7.34043 0.176046 7.40813C0.108346 7.47583 0.070312 7.56765 0.070312 7.66339L0.0703121 10.5774C0.0703122 10.6731 0.108346 10.765 0.176047 10.8327C0.243747 10.9004 0.335569 10.9384 0.431312 10.9384L2.74131 10.9384L2.74131 18.2894C2.74131 18.3851 2.77935 18.477 2.84705 18.5447C2.91475 18.6124 3.00657 18.6504 3.10231 18.6504L6.11831 18.6504C6.21406 18.6504 6.30588 18.6124 6.37358 18.5447C6.44128 18.477 6.47931 18.3851 6.47931 18.2894L6.47931 10.9384L9.17931 10.9384C9.22672 10.9384 9.27366 10.9291 9.31746 10.9109C9.36126 10.8928 9.40106 10.8662 9.43458 10.8327C9.4681 10.7991 9.49469 10.7593 9.51283 10.7155C9.53097 10.6717 9.54031 10.6248 9.54031 10.5774L9.54031 7.66339C9.54031 7.56738 9.50217 7.47531 9.43428 7.40742C9.3664 7.33953 9.27432 7.30139 9.17831 7.30139L6.47831 7.30139L6.47831 5.60139C6.47831 4.78239 6.67831 4.36639 7.74031 4.36639L9.28931 4.36639C9.33672 4.36639 9.38366 4.35705 9.42746 4.33891C9.47126 4.32077 9.51106 4.29418 9.54458 4.26066C9.5781 4.22713 9.60469 4.18734 9.62283 4.14354C9.64097 4.09974 9.65031 4.0528 9.65031 4.00539L9.65031 1.29539C9.65084 1.24773 9.64193 1.20044 9.62408 1.15624C9.60624 1.11205 9.57982 1.07182 9.54635 1.03789C9.51288 1.00396 9.47303 0.976986 9.42908 0.958536C9.38514 0.940085 9.33797 0.930518 9.29031 0.930389V0.930389Z" fill="#000"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect x="0.0703125" y="18.6514" width="17.721" height="9.581" transform="rotate(-90 0.0703125 18.6514)" fill="#000"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__instagram">
+                    <a href="https://www.instagram.com/eurohouse_group/" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M12.393 17.652H5.25802C3.86391 17.6504 2.52734 17.096 1.54146 16.1103C0.555574 15.1246 0.000876056 13.7881 -0.000976562 12.394L-0.000976562 5.259C0.000611464 3.86471 0.555193 2.52799 1.5411 1.54208C2.52701 0.55617 3.86374 0.00158803 5.25802 0L12.393 0C13.7873 0.00158803 15.124 0.55617 16.1099 1.54208C17.0959 2.52799 17.6504 3.86471 17.652 5.259V12.394C17.6502 13.7881 17.0955 15.1246 16.1096 16.1103C15.1237 17.096 13.7871 17.6504 12.393 17.652V17.652ZM5.25802 1.776C4.3346 1.77706 3.4493 2.14436 2.79634 2.79732C2.14338 3.45028 1.77608 4.33558 1.77502 5.259V12.394C1.77608 13.3174 2.14338 14.2027 2.79634 14.8557C3.4493 15.5086 4.3346 15.8759 5.25802 15.877H12.393C13.3164 15.8759 14.2017 15.5086 14.8547 14.8557C15.5077 14.2027 15.875 13.3174 15.876 12.394V5.259C15.875 4.33558 15.5077 3.45028 14.8547 2.79732C14.2017 2.14436 13.3164 1.77706 12.393 1.776H5.25802ZM8.82502 13.391C7.92215 13.391 7.03956 13.1233 6.28885 12.6217C5.53814 12.12 4.95303 11.4071 4.60751 10.5729C4.262 9.7388 4.1716 8.82094 4.34774 7.93541C4.52388 7.04989 4.95865 6.23648 5.59708 5.59806C6.23551 4.95963 7.04891 4.52486 7.93444 4.34872C8.81996 4.17257 9.73783 4.26298 10.572 4.60849C11.4061 4.954 12.1191 5.53911 12.6207 6.28982C13.1223 7.04053 13.39 7.92313 13.39 8.826C13.3887 10.0363 12.9073 11.1967 12.0515 12.0525C11.1957 12.9083 10.0353 13.3897 8.82502 13.391V13.391ZM8.82502 6.036C8.27321 6.036 7.7338 6.19963 7.27498 6.5062C6.81617 6.81277 6.45857 7.24851 6.2474 7.75831C6.03623 8.26812 5.98098 8.8291 6.08863 9.3703C6.19629 9.91151 6.46201 10.4086 6.8522 10.7988C7.24238 11.189 7.73951 11.4547 8.28072 11.5624C8.82193 11.67 9.3829 11.6148 9.89271 11.4036C10.4025 11.1925 10.8383 10.8349 11.1448 10.376C11.4514 9.91723 11.615 9.37781 11.615 8.826C11.6142 8.08629 11.32 7.3771 10.797 6.85405C10.2739 6.33099 9.56473 6.03679 8.82502 6.036V6.036ZM13.399 5.389C13.1824 5.389 12.9707 5.32471 12.7907 5.20427C12.6107 5.08384 12.4705 4.91269 12.3878 4.71249C12.3052 4.5123 12.2838 4.29208 12.3264 4.07973C12.369 3.86738 12.4737 3.67245 12.6272 3.51966C12.7807 3.36686 12.9761 3.26306 13.1887 3.22141C13.4012 3.17977 13.6213 3.20215 13.8212 3.28572C14.021 3.36929 14.1915 3.51029 14.3111 3.69085C14.4307 3.87141 14.494 4.08342 14.493 4.3C14.4901 4.58879 14.3738 4.86486 14.1691 5.06861C13.9644 5.27236 13.6878 5.38744 13.399 5.389V5.389Z" fill="#000"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__right-side">
+            <a class="header__logo header__logo--black" href="/">
+            </a>
+        </div>
+    </nav>
+</header>
+        <div class="send-requestComplete" style="opacity: 0; visibility: hidden;">
+    <div class="send-requestModal">
+        <h3>Thank you for your request!</h3>
+        <p>We will be in contact with you shortly.</p>
+        <div class="btn-transparent closeMenu btn-transparent_border-black" type="submit">
+            <span class="btn-line-1"><i></i></span>
+            <span class="btn-line-2"><i></i></span>
+            <span class="btn-line-3"><i></i></span>
+            <span class="btn-line-4"><i></i></span>
+            <span class="hover-out"><span class="hover-out_i">Close</span></span>
+            <span class="hover"><span class="hover_i">Close</span></span>
+        </div>
+    </div>
+</div>
+<div class="send-request">
+    <div class="send-request__button requestBtn">
+        <h6 class="send-request__h6">
+            Send request
+            <span class="send-request__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9.987" height="9.987" viewBox="0 0 9.987 9.987">
+                    <path id="prefix__message-square" d="M12.987 10.768H5.219L3 12.987V3h9.987z" transform="translate(-3 -3)" style="fill:#fff"/>
+                </svg>
+            </span>
+        </h6>
+    </div>
+    <div class="send-request__menu" style="opacity: 0; visibility: hidden;">
+        <div class="send-request__wrapper">
+            <h5 class="send-request__h5">Contact Eurohouse Group</h5>
+            <form class="form">
+    <fieldset class="form__request">
+        <label class="form__label" for="form-name">Your name</label>
+        <div class="form__wrap">
+            <input class="form__inp" type="text" id="form-name" name="name" data-valid="validName">
+        </div>
+    </fieldset>
+    <fieldset class="form__request">
+        <label class="form__label" for="form-email">Your e-mail</label>
+        <div class="form__wrap">
+            <input class="form__inp" type="text" id="form-email" name="email" data-valid="validEmail">
+        </div>
+    </fieldset>
+    <fieldset class="form__request">
+        <label class="form__label" for="form-message">Message</label>
+        <div class="form__wrap">
+            <textarea class="form__inp form__message" type="text" id="form-message" name="message"></textarea>
+        </div>
+    </fieldset>
+    <div class="form__buttons">
+        <div class="form__submit btns__row">
+            <button class="closeMenu btn-transparent btn-transparent_border-black" type="submit">
+                <span class="btn-line-1"><i></i></span>
+                <span class="btn-line-2"><i></i></span>
+                <span class="btn-line-3"><i></i></span>
+                <span class="btn-line-4"><i></i></span>
+                <span class="hover-out"><span class="hover-out_i">Send</span></span>
+                <span class="hover"><span class="hover_i">Send</span></span>
+            </button>
+        </div>
+        <div class="form__cancel requestBtn"><span></span>Close</div>
+    </div>
+</form>
+        </div>
+    </div>
+</div>
+        <div class="project animate-visible">
+    <div class="project__wrapper">
+        <div class="project__row">
+            <div>
+                <a class="project__backArrow" href="/projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.693" height="26.082" viewBox="0 0 47.693 26.082">
+                        <defs>
+                            <style>
+                                .arrow-black{fill:none;stroke:#000;stroke-width:2px}
+                            </style>
+                        </defs>
+                        <g id="prefix__Group_7534" data-name="Group 7534" transform="translate(1.414 .707)">
+                            <path id="prefix__Path_3250" d="M-575.535 4478.222l-12.334 12.334 12.334 12.334" class="arrow-black" data-name="Path 3250" transform="translate(587.868 -4478.222)"/>
+                            <path id="prefix__Path_3251" d="M10062.242 9815.4h45.468" class="arrow-black" data-name="Path 3251" transform="translate(-10061.431 -9803.064)"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="project__heading">
+                <div class="project__row">
+                    <div class="project__nav">
+                        <div class="project__breadcrumbs">
+                            <a class="project__back" href="/projects">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30.913" height="17.138" viewBox="0 0 30.913 17.138">
+                                    <defs>
+                                        <style>
+                                            .small-arrow{fill:none;stroke:#000;stroke-width:2px}
+                                        </style>
+                                    </defs>
+                                    <g id="prefix__Group_7534" data-name="Group 7534" transform="translate(1.414 .707)">
+                                        <path id="prefix__Path_3250" d="M-580.007 4478.222l-7.862 7.862 7.862 7.862" class="small-arrow" data-name="Path 3250" transform="translate(587.868 -4478.222)"/>
+                                        <path id="prefix__Path_3251" d="M10062.242 9815.4h28.981" class="small-arrow" data-name="Path 3251" transform="translate(-10061.725 -9807.536)"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <ul class="project__pages">
+                                <li class="project__page"><a href="/">Home</a></li>
+                                <li class="project__page"><a href="/projects">Projects</a></li>
+                                <li class="project__page project__page--active"></li>
+                            </ul>
+                        </div>
+                        <div class="project__info">
+                            <div class="project__text"">
+                                <h3 class="project__h3"></h3>
+                                <h1 class="project__h1"></h1>
+                                <p class="project__p"></p>
+                                <div class="project__tags">
+                                    <ul class="project__filter">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project__imgList">
+    </div>
+    <div class="project__pagination">
+        <div class="project__previous">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30.725" height="16.707" viewBox="0 0 30.725 16.707">
+                    <defs>
+                        <style>
+                            .arrowBack{fill:none;stroke:#000}
+                        </style>
+                    </defs>
+                    <g id="prefix__Group_7490" data-name="Group 7490" transform="rotate(180 677.984 495.709)">
+                        <path id="prefix__Path_3250" d="M-587.868 4478.222l8 8-8 8" class="arrowBack" data-name="Path 3250" transform="translate(1935.129 -3503.158)"/>
+                        <path id="prefix__Path_3251" d="M10091.734 9815.4h-29.49" class="arrowBack" data-name="Path 3251" transform="translate(-8737.001 -8832.334)"/>
+                    </g>
+                </svg>
+                <span>Previous</span>
+            </a>
+        </div>
+        <div class="project__home">
+            <a class="home-btn" href="/projects">
+    <span class="home-btn__item"></span>
+    <span class="home-btn__item"></span>
+    <span class="home-btn__item"></span>
+    <span class="home-btn__item"></span>
+</a>
+        </div>
+        <div class="project__next">
+            <a href="#">
+                <span>Next</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30.725" height="16.707" viewBox="0 0 30.725 16.707">
+                    <defs>
+                        <style>
+                            .arrowNext{fill:none;stroke:#000}
+                        </style>
+                    </defs>
+                    <g id="prefix__Group_7490" data-name="Group 7490" transform="translate(0 .354)">
+                        <path id="prefix__Path_3250" d="M0 16l8-8-8-8" class="arrowNext" data-name="Path 3250" transform="translate(22.018)"/>
+                        <path id="prefix__Path_3251" d="M29.49 0H0" class="arrowNext" data-name="Path 3251" transform="translate(0 8)"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+        <section class="pre-footer animate-visible">
+    <div class="pre-footer__wrapper">
+        <div class="pre-footer__row">
+            <p class="pre-footer__text">Our team of professionals is with you every step of the way. Our tried & true approach understands your imagination, your needs, and transforms them into reality. Bring our expertise to your project and watch us exceed your grandest expectations!</p>
+            <p class="pre-footer__sendBtn requestBtn">
+                Let’s Talk!
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23.839" height="13.037" viewBox="0 0 23.839 13.037">
+                        <defs>
+                            <style>
+                                .prefix__cls-1{fill:none;stroke:#fff}
+                            </style>
+                        </defs>
+                        <g id="prefix__Group_7618" data-name="Group 7618" transform="translate(-1325.243 -974.711)">
+                            <path id="prefix__Path_3250" d="M-587.868 4478.222l6.165 6.165-6.165 6.165" class="prefix__cls-1" data-name="Path 3250" transform="translate(1930.078 -3503.158)"/>
+                            <path id="prefix__Path_3251" d="M10084.969 9815.4h-22.727" class="prefix__cls-1" data-name="Path 3251" transform="translate(-8736.999 -8834.169)"/>
+                        </g>
+                    </svg>
+                </span>
+            </p>
+        </div>
+    </div>
+</section>
+        <div class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__row">
+            <div class="footer__contact">
+                <div class="footer__item footer__e-contact">
+                    <span class="white-border"></span>
+                    <ul>
+                        <li><a class="footer__phone" href="tel:+1-604-728-5682">+1-604-728-5682</a></li>
+                        <li class="footer__keep">&#8203;</li>
+                        <li><a class="footer__email" href="mailto:info@eurohouse.ca" target="_blank">info@eurohouse.ca</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__address">
+                    <span class="white-border"></span>
+                    <ul>
+                        <a href="https://www.google.com/maps/place/2474+Marine+Dr,+West+Vancouver" target="_blank">
+                            2474 Marine Drive</br>
+                            West Vancouver,</br>
+                            BC, V7V 1L1</br>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__item footer__social">
+                    <a href="https://www.facebook.com/eurohousegroup/" target="_blank">
+                        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path class="social-icon" d="M9.29031 0.930389L6.99031 0.930389C6.41409 0.897838 5.83759 0.989248 5.29971 1.19845C4.76182 1.40765 4.27505 1.72978 3.87225 2.1431C3.46945 2.55643 3.15997 3.05134 2.9647 3.59444C2.76944 4.13754 2.69292 4.7162 2.74031 5.29139L2.74031 7.30239L0.431312 7.30239C0.335569 7.30239 0.243747 7.34043 0.176046 7.40813C0.108346 7.47583 0.070312 7.56765 0.070312 7.66339L0.0703121 10.5774C0.0703122 10.6731 0.108346 10.765 0.176047 10.8327C0.243747 10.9004 0.335569 10.9384 0.431312 10.9384L2.74131 10.9384L2.74131 18.2894C2.74131 18.3851 2.77935 18.477 2.84705 18.5447C2.91475 18.6124 3.00657 18.6504 3.10231 18.6504L6.11831 18.6504C6.21406 18.6504 6.30588 18.6124 6.37358 18.5447C6.44128 18.477 6.47931 18.3851 6.47931 18.2894L6.47931 10.9384L9.17931 10.9384C9.22672 10.9384 9.27366 10.9291 9.31746 10.9109C9.36126 10.8928 9.40106 10.8662 9.43458 10.8327C9.4681 10.7991 9.49469 10.7593 9.51283 10.7155C9.53097 10.6717 9.54031 10.6248 9.54031 10.5774L9.54031 7.66339C9.54031 7.56738 9.50217 7.47531 9.43428 7.40742C9.3664 7.33953 9.27432 7.30139 9.17831 7.30139L6.47831 7.30139L6.47831 5.60139C6.47831 4.78239 6.67831 4.36639 7.74031 4.36639L9.28931 4.36639C9.33672 4.36639 9.38366 4.35705 9.42746 4.33891C9.47126 4.32077 9.51106 4.29418 9.54458 4.26066C9.5781 4.22713 9.60469 4.18734 9.62283 4.14354C9.64097 4.09974 9.65031 4.0528 9.65031 4.00539L9.65031 1.29539C9.65084 1.24773 9.64193 1.20044 9.62408 1.15624C9.60624 1.11205 9.57982 1.07182 9.54635 1.03789C9.51288 1.00396 9.47303 0.976986 9.42908 0.958536C9.38514 0.940085 9.33797 0.930518 9.29031 0.930389V0.930389Z" fill="#fff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect x="0.0703125" y="18.6514" width="17.721" height="9.581" transform="rotate(-90 0.0703125 18.6514)" fill="#fff"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/eurohouse_group/" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M12.393 17.652H5.25802C3.86391 17.6504 2.52734 17.096 1.54146 16.1103C0.555574 15.1246 0.000876056 13.7881 -0.000976562 12.394L-0.000976562 5.259C0.000611464 3.86471 0.555193 2.52799 1.5411 1.54208C2.52701 0.55617 3.86374 0.00158803 5.25802 0L12.393 0C13.7873 0.00158803 15.124 0.55617 16.1099 1.54208C17.0959 2.52799 17.6504 3.86471 17.652 5.259V12.394C17.6502 13.7881 17.0955 15.1246 16.1096 16.1103C15.1237 17.096 13.7871 17.6504 12.393 17.652V17.652ZM5.25802 1.776C4.3346 1.77706 3.4493 2.14436 2.79634 2.79732C2.14338 3.45028 1.77608 4.33558 1.77502 5.259V12.394C1.77608 13.3174 2.14338 14.2027 2.79634 14.8557C3.4493 15.5086 4.3346 15.8759 5.25802 15.877H12.393C13.3164 15.8759 14.2017 15.5086 14.8547 14.8557C15.5077 14.2027 15.875 13.3174 15.876 12.394V5.259C15.875 4.33558 15.5077 3.45028 14.8547 2.79732C14.2017 2.14436 13.3164 1.77706 12.393 1.776H5.25802ZM8.82502 13.391C7.92215 13.391 7.03956 13.1233 6.28885 12.6217C5.53814 12.12 4.95303 11.4071 4.60751 10.5729C4.262 9.7388 4.1716 8.82094 4.34774 7.93541C4.52388 7.04989 4.95865 6.23648 5.59708 5.59806C6.23551 4.95963 7.04891 4.52486 7.93444 4.34872C8.81996 4.17257 9.73783 4.26298 10.572 4.60849C11.4061 4.954 12.1191 5.53911 12.6207 6.28982C13.1223 7.04053 13.39 7.92313 13.39 8.826C13.3887 10.0363 12.9073 11.1967 12.0515 12.0525C11.1957 12.9083 10.0353 13.3897 8.82502 13.391V13.391ZM8.82502 6.036C8.27321 6.036 7.7338 6.19963 7.27498 6.5062C6.81617 6.81277 6.45857 7.24851 6.2474 7.75831C6.03623 8.26812 5.98098 8.8291 6.08863 9.3703C6.19629 9.91151 6.46201 10.4086 6.8522 10.7988C7.24238 11.189 7.73951 11.4547 8.28072 11.5624C8.82193 11.67 9.3829 11.6148 9.89271 11.4036C10.4025 11.1925 10.8383 10.8349 11.1448 10.376C11.4514 9.91723 11.615 9.37781 11.615 8.826C11.6142 8.08629 11.32 7.3771 10.797 6.85405C10.2739 6.33099 9.56473 6.03679 8.82502 6.036V6.036ZM13.399 5.389C13.1824 5.389 12.9707 5.32471 12.7907 5.20427C12.6107 5.08384 12.4705 4.91269 12.3878 4.71249C12.3052 4.5123 12.2838 4.29208 12.3264 4.07973C12.369 3.86738 12.4737 3.67245 12.6272 3.51966C12.7807 3.36686 12.9761 3.26306 13.1887 3.22141C13.4012 3.17977 13.6213 3.20215 13.8212 3.28572C14.021 3.36929 14.1915 3.51029 14.3111 3.69085C14.4307 3.87141 14.494 4.08342 14.493 4.3C14.4901 4.58879 14.3738 4.86486 14.1691 5.06861C13.9644 5.27236 13.6878 5.38744 13.399 5.389V5.389Z" fill="#fff"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__item footer__logo">
+                    <a href="/">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+                <div class="footer__hiden-logo">
+                    <a href="/">
+                    </a>
+                </div>
+                <p class="footer__copyright">© 2020 Eurohouse.ca, All rights reserved</p>
+                <a href="https://itt.team/" target="_blank" title="Розробка сайтів, торгових платформ" class="itt-logo">
+                    <div class="itt-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h4>
+                        integrity
+                        <br>
+                        trading
+                        <br>
+                        technology
+                    </h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        <script src="../js/main.js"></script>
+        <script src="../js/vendor.js"></script>
+        <script src="../js/pageProject.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    </body>
+</html>
