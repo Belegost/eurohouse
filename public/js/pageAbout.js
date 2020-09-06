@@ -182,6 +182,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
     },
     scrollIsVisible: function scrollIsVisible() {
       var self = this;
+
+      function commaSeparateNumber(val) {
+        while (/(\d+)(\d{3})/.test(val.toString())) {
+          val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+        }
+
+        return val;
+      }
+
       document.addEventListener('scroll', function () {
         if (self.isVisible(self.numbersSection) && self.animate) {
           jquery__WEBPACK_IMPORTED_MODULE_0___default()('[data-number]').each(function () {
@@ -191,7 +200,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
               duration: 2000,
               easing: 'swing',
               step: function step(now) {
-                jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text(Math.ceil(now));
+                // $(this).text(Math.ceil(now));
+                jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text(commaSeparateNumber(Math.round(now)));
               }
             });
           });

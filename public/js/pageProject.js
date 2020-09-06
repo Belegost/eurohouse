@@ -197,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var imagesID = [];
         self.title.innerText = data.data.attributes.title;
         self.breadcrumb.innerText = data.data.attributes.title;
+        self.breadcrumb.href = window.location.href;
         self.location.innerText = data.data.attributes.location;
         self.desc.innerText = data.data.attributes.description;
 

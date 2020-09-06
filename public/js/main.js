@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var Slider = {
     slider: document.querySelector('.hero__slider'),
     items: document.querySelectorAll('.hero__slide'),
-    images: ['img/hero/1.jpg', 'img/hero/2.jpg', 'img/hero/3.jpg', 'img/hero/4.jpg', 'img/hero/5.jpg', 'img/hero/6.jpg'],
+    images: ['img/hero/1.jpg', 'img/hero/2.jpg', 'img/hero/3.jpg', 'img/hero/4.jpg', 'img/hero/5.jpg', 'img/hero/6.jpg', 'img/hero/7.jpg', 'img/hero/8.jpg', 'img/hero/9.jpg', 'img/hero/10.jpg', 'img/hero/11.jpg', 'img/hero/12.jpg', 'img/hero/13.jpg', 'img/hero/14.jpg'],
     setImages: function setImages() {
       for (var i = 0; i < this.items.length; i++) {
         this.items[i].style.backgroundImage = "url('".concat(this.images[i], "')");
