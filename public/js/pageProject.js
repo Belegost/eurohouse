@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       } // Projects List
 
 
-      getJSON('https://apiprod.denisglazkov.best/project/list').then(function (data) {
+      getJSON('https://admin.eurohouse.ca/project/list').then(function (data) {
         var projectList = {};
 
         for (var i = 0; i < data.data.length; i++) {
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           }
         }
       });
-      getJSON("https://apiprod.denisglazkov.best/project/".concat(self.id)).then(function (data) {
+      getJSON("https://admin.eurohouse.ca/project/".concat(self.id)).then(function (data) {
         return data;
       }).then(function (data) {
         var imagesID = [];
@@ -206,21 +206,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
           if (data.included[i].attributes.orientation) {
             if (self.imgList.lastChild.classList.contains('project__portrait')) {
-              var firstImgURI = "https://apiprod.denisglazkov.best/static".concat(data.included[i].attributes.uri);
+              var firstImgURI = "https://admin.eurohouse.ca/static".concat(data.included[i].attributes.uri);
               var firstImg = "<a data-fancybox=\"gallery\" style=\"background: url(".concat(firstImgURI, ") no-repeat; background-size: cover; background-position: center;\" href=\"").concat(firstImgURI, "\"><img src=\"").concat(firstImgURI, "\"></img></a>");
               self.imgList.lastChild.insertAdjacentHTML('beforeEnd', firstImg);
             } else {
               var imgPortrait = "<div class=\"project__portrait\"></div>";
               self.imgList.insertAdjacentHTML('beforeEnd', imgPortrait);
 
-              var _firstImgURI = "https://apiprod.denisglazkov.best/static".concat(data.included[i].attributes.uri);
+              var _firstImgURI = "https://admin.eurohouse.ca/static".concat(data.included[i].attributes.uri);
 
               var _firstImg = "<a data-fancybox=\"gallery\" style=\"background: url(".concat(_firstImgURI, ") no-repeat; background-size: cover; background-position: center;\" href=\"").concat(_firstImgURI, "\"><img src=\"").concat(_firstImgURI, "\"></img></a>");
 
               self.imgList.lastChild.insertAdjacentHTML('beforeEnd', _firstImg);
             }
           } else {
-            var imgURI = "https://apiprod.denisglazkov.best/static".concat(data.included[i].attributes.uri);
+            var imgURI = "https://admin.eurohouse.ca/static".concat(data.included[i].attributes.uri);
             var imgLandscape = "\n                            <div class=\"project__landscape\">\n                                <a data-fancybox=\"gallery\" href=\"".concat(imgURI, "\"><img src=\"").concat(imgURI, "\" width=\"100%\"></a>\n                            </div>");
             self.imgList.insertAdjacentHTML('beforeEnd', imgLandscape);
           }
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         function getTags() {
           return new Promise(function (resolve, reject) {
             for (var i = 0; i < imagesID.length; i++) {
-              getJSON("https://apiprod.denisglazkov.best/image/".concat(imagesID[i])).then(function (image) {
+              getJSON("https://admin.eurohouse.ca/image/".concat(imagesID[i])).then(function (image) {
                 for (var _i = 0; _i < image.data.relationships.length - 1; _i++) {
                   tagsID.push(image.data.relationships[_i].id);
                 }
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           var tagsList = document.querySelector('.project__filter');
 
           for (var i = 0; i < filterTags.length; i++) {
-            getJSON("https://apiprod.denisglazkov.best/tag/".concat(filterTags[i])).then(function (tag) {
+            getJSON("https://admin.eurohouse.ca/tag/".concat(filterTags[i])).then(function (tag) {
               var li = "\n                            <li>\n                                <span class=\"projects__black-border\"></span>\n                                <a href=\"/tag/".concat(tag.data.id, "\">").concat(tag.data.attributes.title, "</a>\n                            </li>");
               tagsList.insertAdjacentHTML('beforeEnd', li);
             });
