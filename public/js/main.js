@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
           };
           var req = new XMLHttpRequest();
-          req.open('POST', 'https://admin.eurohouse.ca/requests/create', true);
+          req.open('POST', 'https://api.eurohouse.ca/requests/create', true);
           req.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
           req.onload = function () {

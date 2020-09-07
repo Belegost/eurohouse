@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         return get(url).then(JSON.parse);
       }
 
-      getJSON('https://admin.eurohouse.ca/project/list').then(function (data) {
+      getJSON('https://api.eurohouse.ca/project/list').then(function (data) {
         var project = {};
 
         for (var i = 0; i < data.data.length; i++) {
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var projectsCount = Object.keys(data.project).length;
 
             var _loop = function _loop(_prop) {
-              getJSON("https://admin.eurohouse.ca/image/".concat(data.project[_prop].imgID)).then(function (img) {
+              getJSON("https://api.eurohouse.ca/image/".concat(data.project[_prop].imgID)).then(function (img) {
                 data.project[_prop].imgURI = img.data.attributes.uri;
                 imgURI.push(img.data.attributes.uri);
               });
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var project = document.createElement('a');
             project.classList.add('our-projects__project');
             project.href = "/project/".concat(sortProjects[i][1].id);
-            project.style.cssText = "background-image: url(https://admin.eurohouse.ca/static".concat(sortProjects[i][1].imgURI, "); transition-delay: ").concat(i * 100 + 300, "ms;");
+            project.style.cssText = "background-image: url(https://api.eurohouse.ca/static".concat(sortProjects[i][1].imgURI, "); transition-delay: ").concat(i * 100 + 300, "ms;");
             list.appendChild(project);
           }
         });
